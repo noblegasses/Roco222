@@ -25,9 +25,9 @@
 **top** displays the processes in linux  
 ---
 
-**the _git_ breakdown**
+## **the _git_ breakdown**
 
-**to send a file to github:**
+### **to send a file to github:**
 * get git, terminal the following:  sudo apt-get install git
 * go to [GitHub] (https://github.com)
 * make an account
@@ -64,7 +64,8 @@
 
 ---
 
-**Robot "Hacking"**
+## **Robot "Hacking"**
+
 [source of default robot SSH info] http://doc.aldebaran.com/2-1/dev/tools/opennao.html
 *open terminal 
 * enter nao@chapman.local
@@ -81,4 +82,24 @@ _tts.say("<enter what you want the robot to say>")_
 * press ctrl+X
 * type python <filename>.py changing <filename> to the name of file you just made
 * once entered the robot should say what you entered into the <> of the file
+
+---
+
+## **DC Motor build**
+
+### **Design Notes**
+*Note 1:* based off the notes from the previous lecture we are going to go ahead with the double coiled design. this should allow for the motor to move without starting momentum and opperate at slower speeds.
+### **Build**
+
+
+cork with commutator and windings:
+![cork with commutator and windings] (/Journal/Journal_Photos/Commutator.jpg)
+
+Number of Coils:60
+
+Resistance of 2 ohms:
+![resistance Reading from Multimeter] (/Journal/Journal_Photos/resistance.jpg)
+
+
+
 
