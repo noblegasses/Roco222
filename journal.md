@@ -93,12 +93,12 @@ _tts.say("<enter what you want the robot to say>")_
 
 
 cork with commutator and windings:
-![cork with commutator and windings] (/Journal/Journal_Photos/Commutator.jpg)
+![cork with commutator and windings] (/Journal_Photos/Commutator.jpg)
 
 Number of Coils:60
 
 Resistance of 2 ohms:
-![resistance Reading from Multimeter] (/Journal/Journal_Photos/resistance.jpg)
+![resistance Reading from Multimeter] (/Journal_Photos/resistance.jpg)
 
 
 
