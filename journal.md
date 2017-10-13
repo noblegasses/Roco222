@@ -89,6 +89,7 @@ _tts.say("<enter what you want the robot to say>")_
 
 ### **Design Notes**
 *Note 1:* based off the notes from the previous lecture we are going to go ahead with the double coiled design. this should allow for the motor to move without starting momentum and opperate at slower speeds.
+*Note 2* Our first motor design was pretty terrible. The nails weren't aligned and the holders werent parallel, resulting in a armature that wouldn't spin. There were only 60 coils resulting in a solenoid with low resistance and little strength, meaning the coil would get hot easily and spin weakly. Finally, the commutator was wrinkled and pitted making it very hard for the brushes to make contact with the armature without stopping it by digging in. We are going to take these notes into account and remake the motor differently. 
 ### **Build**
 
 
