@@ -97,12 +97,12 @@ _tts.say("<enter what you want the robot to say>")_
 
 
 cork with commutator and windings:
-![cork with commutator and windings] (Journal/Journal_Photos/Commutator.jpg)
+![cork with commutator and windings](https://github.com/noblegasses/Roco222/blob/master/Journal_Photos/Commutator.jpg)
 
 Number of Coils:60
 
 Resistance of 2 ohms: 
-![resistance Reading from Multimeter] (Journal/Journal_Photos/resistance.jpg)
+![resistance Reading from Multimeter](Journal/Journal_Photos/resistance.jpg)
 
 2 Coiled design:
 
@@ -120,9 +120,9 @@ the encoder disk followed a fairly budget, yet effective option, simply it is a 
 
 
 --- 
-##**Arm Project**
+## **Arm Project**
 
-###Servo control
+### Servo control
 
 **Arduino Control**
 code 1:
