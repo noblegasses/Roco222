@@ -1,5 +1,5 @@
 
-#**DC Motor build**
+#DC Motor build
 
 ### **Design Notes**
 *Note 1:* based off the notes from the previous lecture we are going to go ahead with the double coiled design. this should allow for the motor to move without starting momentum and opperate at slower speeds.
