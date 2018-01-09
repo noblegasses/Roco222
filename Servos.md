@@ -2,7 +2,8 @@
 
 **Arduino Control**
 code 1:
-'''arduino
+
+```arduino
 int signal = 3;// define pin 3 as a signal
 void setup(){// setup code goes here
 pinMode (signal, OUTPUT);//configure pin 3 as an output
@@ -17,7 +18,7 @@ void loop() {
       delay (100); // wait 100 ms
     }
 }
-'''
+```
 
 *Notes* this works ok, but not perfectly. according to the servo datasheet, there are 3 extremes, -90, 0, and 90. the pulse width required for the 0 position is 1.5 ms, -90 is 1ms and 90 is 2ms. 2ms for pwm is 255 or 100% duty cycle. 1.5ms is 75% of the duty cycle or 191 pwm. Finally, 1 ms is 50% duty cyle or 127.
 

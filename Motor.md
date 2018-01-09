@@ -1,5 +1,5 @@
 
-					#**DC Motor build**
+#**DC Motor build**
 
 ### **Design Notes**
 *Note 1:* based off the notes from the previous lecture we are going to go ahead with the double coiled design. this should allow for the motor to move without starting momentum and opperate at slower speeds.
@@ -32,7 +32,7 @@ Final Design theoretical calculations:
 
 ### **Encoder**
 
-the encoder disk followed a fairly budget, yet effective option, simply it is a small cardboard disk, cut from a pizza box, with a hole in the center the size of the motor shaft, and a notch in it. For the electronic side of the encoder we followed the schematics provided. Although it didn't nessisarily cause a problem I thought it was weird that the cathode and anode for the phototranistor were opposite length of the LED, but other than that it was pretty straight forward. We drilled a hole into the mount to fit the en coder.
+the encoder disk followed a fairly budget, yet effective option, simply it is a small cardboard disk, cut from a pizza box, with a hole in the center the size of the motor shaft, and a notch in it. For the electronic side of the encoder we followed the schematics provided. Although it didn't nessisarily cause a problem I thought it was weird that the cathode and anode for the phototranistor were opposite length of the LED, but other than that it was pretty straight forward. We drilled a hole into the mount to fit the encoder.
 
 ### **Photos**
 
