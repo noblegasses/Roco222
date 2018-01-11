@@ -24,7 +24,8 @@ Resistance of 2 ohms:
 
 Final Design:
 
-the final motor design has 6 windings with 100 coils per winding. It has a PLA armature with a threaded metal rod. the comutator is made up of segments of conductive copper with a spongy bit of double sided tape connecting it to the shaft. To reduce friction, the rod is run through 2 ball bearings. there are wooden holders to hold the magnets, since the permability of wood is better than that of free space, putting some wood between the armature and the magnets might marginally improve the motor performance.
+The final motor design has 6 windings with 100 coils per winding. It has a PLA armature with a threaded metal rod. the comutator is made up of segments of conductive copper with a spongy bit of double sided tape connecting it to the shaft. To reduce friction, the rod is run through 2 ball bearings. there are wooden holders to hold the magnets, since the permability of wood is better than that of free space, putting some wood between the armature and the magnets might marginally improve the motor performance.
+
 ---
 
 ### **Encoder**
