@@ -1,4 +1,4 @@
-#Arm Project#
+# Arm Project
 
 URDF this was written for my partner's computer. As such, some of the code doesn't work off of it . There are 2 main parts to this  the visual, and the joints. the visual uses the STL's specified by the path and displays them in RViz. The joints are the important part of the URDF as they define the range of motion that the motors have so they can be modified with the joint state publisher/ 
 ```
@@ -210,6 +210,6 @@ void loop(){
 }
 ```
 
-##Photos:
+## Photos:
 ![Built arm](https://github.com/noblegasses/Roco222/blob/master/Journal_Photos/real_arm.jpg)
 ![rviz model](https://github.com/noblegasses/Roco222/blob/master/Journal_Photos/ROS_arm.png)
