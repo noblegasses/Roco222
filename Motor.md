@@ -35,5 +35,9 @@ Final Design theoretical calculations:
 the encoder disk followed a fairly budget, yet effective option, simply it is a small cardboard disk, cut from a pizza box, with a hole in the center the size of the motor shaft, and a notch in it. For the electronic side of the encoder we followed the schematics provided. Although it didn't nessisarily cause a problem I thought it was weird that the cathode and anode for the phototranistor were opposite length of the LED, but other than that it was pretty straight forward. We drilled a hole into the mount to fit the encoder.
 
 ### **Photos**
+![Final Motor design](https://github.com/noblegasses/Roco222/blob/master/Journal_Photos/motor.jpg)
 
+![Final Motor With encoder](https://github.com/noblegasses/Roco222/blob/master/Journal_Photos/motor%20with%20encoder.jpg)
+
+![sensor for the encoder](https://github.com/noblegasses/Roco222/blob/master/Journal_Photos/light%20sensor.jpg)
 

@@ -1,3 +1,7 @@
+#Arm Project#
+
+URDF this was written for my partner's computer. As such, some of the code doesn't work off of it . There are 2 main parts to this  the visual, and the joints. the visual uses the STL's specified by the path and displays them in RViz. The joints are the important part of the URDF as they define the range of motion that the motors have so they can be modified with the joint state publisher/ 
+```
 <?xml version="1.0"?>
 <robot name="robot-arm">
   <link name="base_link">
@@ -136,6 +140,76 @@
     <child link="gripper1"/>
     <origin xyz="0 -0.0276 0.0007" />
   </joint>
+```
+the next is an arduino code I was writing to control the servos of the arm. It takes the values from the Joint state publisher and writes them to the servos.
+```arduino
+#if (ARDUINO >= 100)
+ #include <Arduino.h>
+#else
+ #include <WProgram.h>
+#endif
 
-</robot>
+#include <Servo.h> 
+#include <ros.h>
+#include <sensor_msgs/JointState.h
+#include <std_msgs/Float32.h>
+sensor_msgs::JointState js;
+std_msgs::Float32 pos_msgs;
+ros::NodeHandle  nh;
+int pos[4];
+Servo baseservo1, baseservo2, elbow, wrist, hand;
 
+ros::Publisher pub_js("js", &js);
+std_msgs::Float32 debug;
+void servo_cb( const std_msgs::JointStates& cmd_msg){
+   js = cmd_msg;
+   pub_js.publish(&js);
+  pos[1] = cmd_msg.position[0];
+  pos[2] = cmd_msg.position[1];
+  pos[3] = cmd_msg.position[2];
+  pos[4] = cmd_msg.position[3];
+  baseservo1.write(pos[1]); //set servo angle, should be from 0-180
+  baseservo2.write(pos[1]); //set servo angle, should be from 0-180
+  elbow.write(pos[2]]); //set servo angle, should be from 0-180
+  wrist.write(pos[3]); //set servo angle, should be from 0-180
+  hand.write(pos[4]); //set servo angle, should be from 0-180
+
+
+  digitalWrite(13, HIGH-digitalRead(13));  //toggle led  
+}
+
+
+ros::Subscriber<sensor_msgs::JointState> sub("/joint_states", servo_cb);
+//ros::Publisher pub_debugR("debugR", &pos_msgs);
+
+void setup(){
+  pinMode(13, OUTPUT);
+
+  nh.initNode();
+  nh.subscribe(sub);
+//nh.advertise(pub_debugR);
+  nh.advertise(pub_js);
+  
+  baseservo1.attach(9); //attach it to pin 9
+  baseservo2.attach(10);
+  elbow.attach(11);
+  wrist.attach(6);
+  hand.attach(5);
+}
+void loop(){
+  pos_msgs.data =pos[1];
+  //pub_debugR.publish(&pos_msgs);
+  pos_msgs.data= pos [2];
+  //pub_debugR.publish(&pos_msgs);
+  pos_msgs.data= pos[3];
+  //pub_debugR.publish(&pos_msgs);
+  pos_msgs.data= pos[4];
+
+  nh.spinOnce();
+  delay(1);
+}
+```
+
+##Photos:
+![Built arm](https://github.com/noblegasses/Roco222/blob/master/Journal_Photos/real_arm.jpg)
+![rviz model](https://github.com/noblegasses/Roco222/blob/master/Journal_Photos/ROS_arm.png)
