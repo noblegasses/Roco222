@@ -22,12 +22,9 @@ Number of Coils:60
 Resistance of 2 ohms: 
 ![resistance Reading from Multimeter](Journal/Journal_Photos/resistance.jpg)
 
-2 Coiled design:
+Final Design:
 
-Final design:  
-
-Final Design theoretical calculations:
-
+the final motor design has 6 windings with 100 coils per winding. It has a PLA armature with a threaded metal rod. the comutator is made up of segments of conductive copper with a spongy bit of double sided tape connecting it to the shaft. To reduce friction, the rod is run through 2 ball bearings. there are wooden holders to hold the magnets, since the permability of wood is better than that of free space, putting some wood between the armature and the magnets might marginally improve the motor performance.
 ---
 
 ### **Encoder**
